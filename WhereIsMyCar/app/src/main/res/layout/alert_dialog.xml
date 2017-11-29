@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/share_pos"
+        android:id="@+id/tv_share_pos"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/commit"
+        android:id="@+id/bn_share_pos_commit"
+        app:layout_constraintTop_toBottomOf="@+id/tv_share_pos"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:id="@+id/bn_share_pos_cancel"
+        app:layout_constraintTop_toTopOf="@+id/bn_share_pos_commit"
+        app:layout_constraintBottom_toBottomOf="@+id/bn_share_pos_commit"
+        app:layout_constraintLeft_toRightOf="@+id/bn_share_pos_commit"/>
+
+</android.support.constraint.ConstraintLayout>
